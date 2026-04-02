@@ -1,1 +1,157 @@
+{
+  "burgers": [
+    {
+      "id": 1,
+      "title": "Classic Beef Burger",
+      "description": "Juicy beef, classic flavor, and endless ways to customize.",
+      "totalSteps": 5
+    },
+    {
+      "id": 2,
+      "title": "Grilled Chicken Burger",
+      "description": "A lighter grilled chicken option with bold toppings and sauces.",
+      "totalSteps": 5
+    }
+  ],
+  "steps": [
+    {
+      "id": 101,
+      "burgerId": 1,
+      "order": 1,
+      "label": "Bun",
+      "type": "multiple-choice",
+      "instruction": "Choose your bun",
+      "options": ["Sesame", "Brioche", "Lettuce Wrap"],
+      "confirmationMessage": "Nice pick!"
+    },
+    {
+      "id": 102,
+      "burgerId": 1,
+      "order": 2,
+      "label": "Protein",
+      "type": "multiple-choice",
+      "instruction": "Choose your protein",
+      "options": ["Single Beef Patty", "Double Beef Patty", "Plant-Based Patty"],
+      "confirmationMessage": "Extra tasty!"
+    },
+    {
+      "id": 103,
+      "burgerId": 1,
+      "order": 3,
+      "label": "Toppings",
+      "type": "multiple-choice",
+      "instruction": "Choose your topping set",
+      "options": ["Lettuce & Tomato", "Pickles & Onion", "All Toppings"],
+      "confirmationMessage": "Fresh choice!"
+    },
+    {
+      "id": 104,
+      "burgerId": 1,
+      "order": 4,
+      "label": "Sauce Amount",
+      "type": "text",
+      "instruction": "Enter how many sauce servings you want",
+      "inputLabel": "Number of sauce servings",
+      "placeholder": "Example: 2",
+      "confirmationMessage": "Sauce added!",
+      "feedback": {
+        "rule": "greater-than",
+        "threshold": 3,
+        "message": "Too much sauce might overpower the flavor!"
+      }
+    },
+    {
+      "id": 105,
+      "burgerId": 1,
+      "order": 5,
+      "label": "Sauce",
+      "type": "image-selection",
+      "instruction": "Choose your burger style",
+      "imageOptions": [
+        {
+          "label": "Classic Style",
+          "url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "label": "Loaded Style",
+          "url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "label": "Spicy Chipotle",
+          "url": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "confirmationMessage": "Looks delicious!"
+    },
 
+    {
+      "id": 201,
+      "burgerId": 2,
+      "order": 1,
+      "label": "Bun",
+      "type": "multiple-choice",
+      "instruction": "Choose your bun",
+      "options": ["Whole Wheat", "Brioche", "Lettuce Wrap"],
+      "confirmationMessage": "Great choice!"
+    },
+    {
+      "id": 202,
+      "burgerId": 2,
+      "order": 2,
+      "label": "Protein",
+      "type": "multiple-choice",
+      "instruction": "Choose your chicken style",
+      "options": ["Grilled Chicken", "Crispy Chicken", "Plant-Based"],
+      "confirmationMessage": "Sounds good!"
+    },
+    {
+      "id": 203,
+      "burgerId": 2,
+      "order": 3,
+      "label": "Toppings",
+      "type": "multiple-choice",
+      "instruction": "Choose your topping set",
+      "options": ["Lettuce & Tomato", "Onion & Pickles", "Avocado & Lettuce"],
+      "confirmationMessage": "Fresh pick!"
+    },
+    {
+      "id": 204,
+      "burgerId": 2,
+      "order": 4,
+      "label": "Sauce Amount",
+      "type": "text",
+      "instruction": "Enter how many sauce servings you want",
+      "inputLabel": "Number of sauce servings",
+      "placeholder": "Example: 1",
+      "confirmationMessage": "Nice balance!",
+      "feedback": {
+        "rule": "greater-than",
+        "threshold": 3,
+        "message": "Too much sauce could take over the grilled flavor!"
+      }
+    },
+    {
+      "id": 205,
+      "burgerId": 2,
+      "order": 5,
+      "label": "Presentation",
+      "type": "image-selection",
+      "instruction": "Choose your burger presentation style",
+      "imageOptions": [
+        {
+          "label": "Fresh Garden",
+          "url": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "label": "Crispy Stack",
+          "url": "https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "label": "Spicy Grill",
+          "url": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "confirmationMessage": "Looks amazing!"
+    }
+  ]
+}
